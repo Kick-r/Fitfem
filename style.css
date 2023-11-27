@@ -1,0 +1,148 @@
+/*pega o arquivo de fonte*/
+@font-face {
+    font-family: subt;
+    src: url('font.otf');
+}
+
+/*configura o elemento que é o corpo do site*/
+body {
+    font-family: Arial, sans-serif;
+    text-align: -webkit-center;
+    background-color: #f8f3ed;
+}
+
+/*adiciona e configura o background*/
+header {
+    background-image: url('FitFem.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 40em;
+    
+}
+
+
+/*configura a barra de navegação*/
+nav {
+    position: fixed ;
+    top: -2.5%;
+    width: 100%;
+}
+
+/*estiiza esse elemento*/
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f7d19f;
+    padding: 10px;
+}
+
+
+
+/*adiciona um espasamento a esse elemento*/
+nav li {
+    margin: 0 20px;
+}
+
+/*estiliza esse elemento*/
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/*coloca um trasição e aumenta sua escala quando o cursor está em cima desse elemento*/
+nav li:hover {
+    transition: all 0.2s linear;
+    scale: 1.2;
+}
+
+/*adiciona trasição e auteração de cor quando o cursor está em cima desse elemento*/
+nav a:hover{
+    transition: all 0.2s linear;
+    color: black;
+}
+
+/*aumenta esse elemento*/
+section {
+    padding: 20px;
+}
+
+/*estiliza e configura esste elemento*/
+.clothing-item {
+    text-align: center;
+    background-color: #d6ac74;
+    padding: 1em;
+    border: 0;
+    border-radius: 20px;
+    width: max-content                  ;
+    margin: 20px;
+    border: 0;
+    
+}
+
+/*afasta todos os elementos perto à uma distancia de 1em*/
+.clothing-item p {
+    margin: 1em;
+}
+
+/*configura o tamanho das imagens*/
+.clothing-item img {
+    width: 25em;
+    height: 27em;
+    border-radius: 5px;;
+}
+
+/*estiliza e muda o curso quando o próprio cursor esta em cima da imagem*/
+.clothing-item img:hover {
+    transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    scale: 1.03;
+    cursor: grab;
+}
+
+/*muda o cursor quando clica na imagem*/
+.clothing-item img:active {
+    cursor: grabbing;
+}
+
+/*estiliza o rodapé*/
+footer {
+    background-color: #c19b68;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/*estiliza o botão*/
+button {
+    border-radius: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: large;
+    border: 0;
+    background: linear-gradient(145deg, #e5b87c, #c19b68);
+    box-shadow:  3px 3px 6px #b69263, -3px -3px 6px #f6c685;
+    scale: 1.2;
+}
+
+/*edita o estilo do butão quando tiver um click*/
+button:active {
+    transition: all 0.07s ease-in;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #c19b68, #e5b87c);
+    box-shadow:  3px 3px 6px #b69263, -3px -3px 6px #f6c685;
+    scale: 1.1;
+}
+
+/*quando o corsor passa por cima muda o próprio cursor*/
+button:hover {
+    cursor: pointer;
+}
+
+/*muda o estilo da fonte*/
+h2 {
+    font-family: subt;
+}

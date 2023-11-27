@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--chamndo o arquivo de CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--chamando a imagem de icone-->
+    <link rel="shortcut icon" href='logo.png'>
+
+    <!--Título ou nome do site-->
+    <title>FitFem</title>
+
+</head>
+<body>
+
+    <!--Script para redirecionar para outra pág-->
+    <script>
+        function m404(){
+            window.location.href = '404.html'
+        }
+    </script>
+    
+    <!--musica de fundo-->
+    <audio src="music.mp3" id="audio"></audio>
+
+    <!--cabeçario-->
+    <header>
+    </header>
+
+    <!--Barra de navegação-->
+    <nav>
+        <ul>
+            <li><a href="#shorts">Shorts</a></li>
+            <li><a href="#camisetas">Camisetas</a></li>
+            <li><a href="#tops">Tops</a></li>
+        </ul>
+    </nav>
+
+    <!--Conteúdo do site-->
+    <section class="all">
+        
+        <!--Área de Shorts-->
+        <section id="shorts">
+
+            <!--Título da área-->
+            <h2>Shorts</h2>
+
+            <!--itens dessa área-->
+            <div class="clothing-item">
+                <!--Imagem dessa área-->
+                <img src="https://i.pinimg.com/564x/86/0d/cf/860dcf6af981d21d64246e6eeb0af688.jpg" id="short">
+
+                <!--Nome do item-->
+                <p>Short</p>
+
+                <!--botões para mudar a imagem-->
+                <span><button id="bt1"> < </button></span>
+                <button onclick="m404()">Compra</button>
+                <span><button id="bt2"> > </button></span>
+            </div>
+        </section>
+        
+        <!--Área de Camisetas/Blusas-->
+        <section id="camisetas">
+
+            <!--Título da área-->
+            <h2>Camisetas</h2>
+
+            <!--itens dessa área-->
+            <div class="clothing-item">
+
+                <!--Imagem dessa área-->
+                <img src="https://i.pinimg.com/564x/14/5a/7e/145a7e83f482ba33ca48467e6a432dcb.jpg" id="camiseta">
+
+                <!--Nome do item-->
+                <p>Camiseta</p>
+
+                <!--botões para mudar a imagem-->
+                <span><button id="bt3"> < </button></span>
+                <button onclick="m404()">Compra</button>
+                <span><button id="bt4"> > </button></span>
+            </div>
+        </section>
+        
+        <!--Área de Tops-->
+        <section id="tops">
+
+            <!--Título da área-->
+            <h2>Tops</h2>
+            
+            <!--itens dessa área-->
+            <div class="clothing-item">
+
+                <!--Imagem dessa área-->
+                <img src="https://i.pinimg.com/564x/0b/a0/07/0ba007de2e4c60c84e31770202732bea.jpg" id="top">
+
+                <!--Nome do item-->
+                <p>Top</p>
+
+                <!--botões para mudar a imagem-->
+                <span><button id="bt5"> < </button></span>
+                <button onclick="m404()">Compra</button>
+                <span><button id="bt6"> > </button></span>
+            </div>
+        </section>
+    </section>
+
+    <!--Rodapé-->
+    <footer>
+        <p>&copy; 2023 Roupas de Academia Femininas</p>
+        <p>Criadora: Isabela Tauane Barbosa Teixeira</p> <p>Professora: Janaina Mota</p>
+        <p>IFBA-Campos Brumado</p>
+    </footer>
+
+    <!--chamando o arquivo de javascript-->
+    <script src="script.js"></script>
+
+</body>
+</html>
